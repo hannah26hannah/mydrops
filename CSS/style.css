@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+@import "linkStyle.css";
+
+
+/* 전역 클래스  */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+header,
+main {
+  margin: 0 auto;
+}
+.logo {
+  width:160px;
+}
+/* header design */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left:20px;
+  font-weight: bold;
+}
+header a {
+  text-decoration: none;
+  color:inherit;
+}
+header a:hover {
+  color: #8a2a21;
+}
+
+/* buttons */
+button {
+  border: 0.125em solid black;
+  cursor: pointer;
+  font:  "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.125em;
+  margin: 0.5rem;
+  padding: 0.5em 0.75em;
+  text-transform: uppercase;
+}
+
+.whiteBtn {
+  background: white;
+}
+.brownBtn {
+  background: #87827d;
+  color: white;
+}
+.whiteBtn:hover,
+.brownBtn:hover
+ {
+  -moz-box-shadow: 7px 8px 0px -2px #8a2a21;
+	-webkit-box-shadow: 7px 8px 0px -2px #8a2a21;
+	box-shadow: 7px 8px 0px -2px #8a2a21;
+}
+
+/* first row */
+
+.firstRow {
+  display: flex;
+  flex-direction: row;
+}
+.firstRow section {
+  width: 50%;
+  height: 600px;
+}
+.firstRow .firstRow-item1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 0 49px 80px;
+}
+.firstRow .firstRow-item1 h1 {
+  font-size: 37px;
+  line-height: 39px;
+}
+.firstRow .firstRow-item2 {
+  display: flex;
+}
+.firstRow .firstRow-item2 video {
+  width: 100%;
+}
+
+/* second row */
+
+.secondRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.secondRow .secondRow-item1,
+.secondRow .secondRow-item2  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid blue;
+}
+.secondRow article {
+  background: lightblue;
+  border: 1px solid red;
+  width:50%;
+  padding:10px;
+}
