@@ -5,26 +5,25 @@
     <title>Welcome To MyDrops</title>
   </head>
   <link rel="stylesheet" href="./css/style.css">
-  <script src="https://kit.fontawesome.com/d2606cafc2.js" crossorigin="anonymous"></script>
+
   <body>
     <!-- 반응형 디자인 figma로 추후에 바꿔보기 -->
   <header>
     <nav>
-      <img src="./images/logo.png" alt="mydrops" class="logo">
+      <a href="./index.html"><img src="./images/myDrop.png" alt="mydrops" class="logo"></a>
       <div class="nav-list">
         <ul>
-          <a href="#" target="_self"><li>About</li></a>
-          <a href="#" target="_self"><li>How to use</li></a>
-          <a href="#" target="_self"><li>Community</li></a>
-          <a href="#" target="_self"><li>Try New Bag</li></a>
-          <a href="#" target="_self"><li>My Journal</li></a>
-
+          <a href="./about.html" target="_self"><li>About</li></a>
+          <a href="./howToUse.html" target="_self"><li>How to use</li></a>
+          <a href="./community.html" target="_self"><li>Community</li></a>
+          <a href="./tryNewBag.html" target="_self"><li>Try New Bag</li></a>
+          <a href="./myJournal.html" target="_self"><li>My Journal</li></a>
         </ul>
       </div>
       <div class="user-info">
         <!-- 지금 아래 두 버튼은 모두 다른 웹 페이지로 넘어가진 않고 JS action을 불러일으킬 용도로 사용됨.  -->
-        <button type="button" name="button" class="whiteBtn">Log in</button>
-        <button type="button" name="button" class="brownBtn">Register</button>
+        <button type="button" name="button" class="logInBtn">Log in</button>
+        <button type="button" name="button" class="registerBtn">Register</button>
       </div>
     </nav>
   </header>
@@ -38,7 +37,7 @@
         <a href="#" class="firstLink">Track Your Drops</a>
       </section>
       <section class="firstRow-item2">
-        <video poster="…" autoplay loop muted controls>
+        <video poster="./images/Brewing Coffee.jpg" autoplay loop muted controls>
       </section>
     </section>
     <section class="secondRow">
@@ -47,72 +46,52 @@
         <article class="article1">
           <h4>Track Your Drop of Coffee</h4>
           <p>When people buy a bag of coffee bean, they consume it almost in a month. and people are always thinking of what to buy for the next coffee time.<br/><br/>Here you can track your taste for coffee every day, recording what you’ve enjoyed. You’ll get your own personal taste reporter, and based on it, the next purchasing wouldn’t be a failure.</p>
-          <a href="#" class="secondLink">Track Now</a>
+          <a href="/myJournal.html" class="secondLink">Track Now</a>
         </article>
         <article class="article2">
           <h4>Get Your New Experience</h4>
           <p>Have you got your personal taste report? Then it’s time to try your potential favorite! Based on your record, We’ll recommend the righteous choice.</p>
-          <a href="#" class="secondLink">Learn More</a>
+          <a href="/howToUse.html" class="secondLink">Learn More</a>
         </article>
       </section>
       <section class="secondRow-item2">
         <article class="article3">
           <h4>Share Your Taste with People</h4>
           <p>You can share your joyful coffee moment with people. You can just say this: <br/><br/><strong>“It was awesome, we can visit there next time again!”</strong></p>
-          <a href="#" class="secondLink">Share Now</a>
+          <a href="/community.html" class="secondLink">Share Now</a>
         </article>
         <article class="article4">
           <h4>Subscribe Your Coffee bag every month</h4>
           <p>Do you want to get your freshly roasted coffee bean every day? We have special kits for you. From Home Cafe Starter To DIY Upcycling Coffee Kit. Just Try Once!</p>
-          <a href="#" class="secondLink">Learn More</a>
+          <a href="/tryNewBag.html" class="secondLink">Learn More</a>
         </article>
       </section>
     </section>
     <section class="partnership">
       <h2>Hundreds of people and company<br/>
  is now have a coffee from here</h2>
-      <div class="partner-list">
-           <div class="partner-item">
-           </div>
-           <div class="partner-item">
-           </div>
-           <div class="partner-item">
-           </div>
-           <div class="partner-item">
-
-           </div>
-           <div class="partner-item">
-
-           </div>
-           <div class="partner-item">
-
-           </div>
-           <div class="partner-item">
-
-           </div>
-           <div class="partner-item">
-
-           </div>
-           <div class="partner-item">
-
-           </div>
-           <div class="partner-item">
-
-           </div>
-           <div class="partner-item">
-
-           </div>
-           <div class="partner-item">
-
-           </div>
-
+      <div class="partner-list1">
+           <div class="partner-item"></div>
+           <div class="partner-item"></div>
+           <div class="partner-item"></div>
+           <div class="partner-item"></div>
+           <div class="partner-item"></div>           
+          <div class="partner-item"></div>
+      </div>
+      <div class="partner-list2">
+           <div class="partner-item"></div>
+           <div class="partner-item"></div>
+           <div class="partner-item"></div>
+           <div class="partner-item"></div>
+           <div class="partner-item"></div>
+           <div class="partner-item"></div>
       </div>
     </section>
   </main>
 
   <footer>
     <nav>
-      <img src="./images/logo.png" alt="mydrops" class="logo">
+      <img src="./images/myDrop.png" alt="mydrops" class="logo">
       </div>
       <div class="nav-list">
         <ul>
@@ -136,8 +115,8 @@
         </ul>
       </div>
       <div class="user-info">
-        <button type="button" name="button" class="brownBtn">Register</button>
-        <button type="button" name="button" class="whiteBtn">Log in</button>
+        <button type="button" name="button" class="registerBtn">Register</button>
+        <button type="button" name="button" class="logInBtn">Log in</button>
       </div>
     </nav>
     <hr>

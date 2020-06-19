@@ -23,7 +23,7 @@ a {
   text-align: center;
   text-indent: 0; }
   .firstLink:hover {
-    background-color: #c7c0b9; }
+    box-shadow: 12px 11px 0px -3px #bdaebd; }
   .firstLink:active {
     position: relative;
     top: 1px; }
@@ -36,6 +36,7 @@ a {
   border: 2px solid #000000;
   display: inline-block;
   color: #000000;
+  margin-top: 17px;
   font-size: 15px;
   font-weight: normal;
   font-style: normal;
@@ -47,7 +48,7 @@ a {
   text-align: center;
   text-indent: 0; }
   .secondLink:hover {
-    background-color: #ebe6e2; }
+    box-shadow: 12px 11px 0px -3px #bdaebd; }
   .secondLink:active {
     position: relative;
     top: 1px; }
@@ -66,7 +67,8 @@ main {
 
 .logo {
   width: 160px;
-  height: 44px; }
+  height: 44px;
+  margin: 2px 0px 1px 10px; }
 
 h2 {
   font-size: 40px;
@@ -94,16 +96,21 @@ header ul {
   flex-direction: row;
   align-items: center;
   justify-content: space-between; }
-  header ul li {
-    list-style: none;
-    margin-left: 20px;
-    font-weight: bold;
-    color: #89470B; }
   header ul a {
     text-decoration: none;
-    color: inherit; }
+    color: inherit;
+    border-radius: 16px;
+    padding: 0px 8px 2px 6px; }
     header ul a:hover {
-      color: #8a2a21; }
+      box-shadow: 15px 13px 0px -4px #bdaebd; }
+    header ul a li {
+      list-style: none;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 19px;
+      color: black;
+      position: relative;
+      bottom: -3px; }
 
 /* buttons */
 button {
@@ -117,18 +124,18 @@ button {
   border: 2px solid #333;
   border-radius: 11px; }
 
-.whiteBtn {
+.logInBtn {
   background: white; }
 
-.brownBtn {
-  background: #87827d;
+.registerBtn {
+  background: #4d2b07;
   color: white; }
 
-.whiteBtn:hover,
-.brownBtn:hover {
-  -moz-box-shadow: 7px 8px 0px -2px #8a2a21;
-  -webkit-box-shadow: 7px 8px 0px -2px #8a2a21;
-  box-shadow: 7px 8px 0px -2px #8a2a21; }
+.logInBtn:hover,
+.registerBtn:hover {
+  -moz-box-shadow: 7px 8px 0px -2px #968a89;
+  -webkit-box-shadow: 7px 8px 0px -2px #968a89;
+  box-shadow: 7px 8px 0px -2px #968a89; }
 
 /* first row */
 .firstRow {
@@ -188,16 +195,18 @@ button {
   height: 400px; }
   .partnership h2 {
     top: -20px; }
-  .partnership .partner-list {
+  .partnership .partner-list1,
+  .partnership .partner-list2 {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     align-items: center;
     justify-content: space-evenly; }
-    .partnership .partner-list .partner-item {
+    .partnership .partner-list1 .partner-item,
+    .partnership .partner-list2 .partner-item {
       width: 150px;
       height: 80px;
       background: lightgray;
-      margin: 5px; }
+      margin: 10px; }
 
 footer nav .nav-list {
   display: flex;
